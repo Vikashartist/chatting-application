@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <!-- this is the link for fonts from font aswomes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <h1>Server connected using socket.io</h1>
+    <p>Ready to run..</p> -->
+    <div class="header-title">Chatting Application using node.js</div>
+    <div class="container">
+
+        <div class="header-section">
+            <div class="bio-des-cont">
+                <div class="prof-img-cont"></div>
+                <div class="prof-name-cont">
+                    <div class="name-1">Person 1</div>
+                    <div class="name-2">Online</div>
+                </div>
+            </div>
+        </div>
+        <div class="msg-container">
+            <div id="messages"></div>
+        </div>
+
+        <div class="inp-section">
+            <input type="text" id="message" placeholder="Enter a message" autofocus>
+            <button id="sendbtn">Send</button>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        const allmessages = document.getElementById('messages');
+        const sendbtn = document.getElementById('sendbtn');
+        const messageinput = document.getElementById('message');
+        socket.on("message", (message) => {
+            const p = document.createElement('p');
+            p.innerText = message;
+            allmessages.appendChild(p);
+        });
+        sendbtn.addEventListener('click', () => {
+            const message = messageinput.value;
+
+            socket.emit("user-message", message);
+        });
+    </script>
+</body>
+
+</html>

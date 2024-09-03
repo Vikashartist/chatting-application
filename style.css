@@ -1,0 +1,160 @@
+                    * {
+                        margin: 0px;
+                        padding: 0px;
+                        box-sizing: border-box;
+                        text-decoration: none;
+                    }
+                    
+                    .container {
+                        height: 600px;
+                        width: 80%;
+                        border: 1px solid black;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                        border: 1px solid white;
+                    }
+                    
+                    .header-section {
+                        width: 100%;
+                        height: 60px;
+                        background-color: rgb(214, 214, 214);
+                        display: flex;
+                        align-items: center;
+                    }
+                    
+                    .bio-des-cont {
+                        width: 260px;
+                        height: 50px;
+                        background-color: transparent;
+                        margin-left: 26px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    
+                    .prof-img-cont {
+                        width: 46px;
+                        height: 46px;
+                        background-size: cover;
+                        border-radius: 50%;
+                        background-color: rgb(99, 99, 99);
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        transition: 0.4s;
+                    }
+                    
+                    .prof-img-cont:hover {
+                        background-color: rgb(112, 112, 112);
+                        scale: 1.04;
+                        transition: 0.4s;
+                    }
+                    
+                    .prof-name-cont {
+                        width: 200px;
+                        height: 46px;
+                        background-color: transparent;
+                        margin-left: 6px;
+                    }
+                    
+                    .name-1 {
+                        width: 100%;
+                        height: 46%;
+                        background-color: transparent;
+                        margin-top: 1px;
+                        color: rgb(97, 97, 97);
+                        padding-left: 12px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        padding-top: 2px;
+                        text-transform: uppercase;
+                    }
+                    
+                    .name-2 {
+                        width: 100%;
+                        height: 46%;
+                        background-color: transparent;
+                        margin-top: 1px;
+                        color: rgb(55, 160, 7);
+                        padding-left: 12px;
+                        font-size: 12px;
+                        font-weight: bold;
+                        padding-top: 2px;
+                        letter-spacing: 1px;
+                    }
+                    
+                    #messages {
+                        background-color: rgb(255, 255, 255);
+                        width: 100%;
+                        height: 40px;
+                        padding-left: 30px;
+                        color: black;
+                        font-size: 16px;
+                        padding-top: 10px;
+                        font-weight: bold;
+                    }
+                    
+                    #message {
+                        width: 86%;
+                        height: 30px;
+                        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                        padding: 12px;
+                        font-weight: bold;
+                        padding-left: 20px;
+                        outline: none;
+                        border: none;
+                        border-radius: 4px;
+                    }
+                    
+                    .msg-container {
+                        width: 100%;
+                        height: 500px;
+                        /* border: 2px solid rgb(0, 218, 145); */
+                        overflow: scroll;
+                    }
+                    
+                    .inp-section {
+                        width: 100%;
+                        height: 38px;
+                        background-color: rgb(160, 160, 160);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                    button {
+                        height: 34px;
+                        width: 10%;
+                        background-color: rgb(31, 214, 31);
+                        color: white;
+                        border: none;
+                        margin-left: 10px;
+                        border-radius: 4px;
+                        font-weight: bold;
+                        /* font-size: 16px; */
+                        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                    }
+                    /* this is the syle ofheader tilte */
+                    
+                    .header-title {
+                        width: 100%;
+                        height: 60px;
+                        background: linear-gradient(#09ad81, #21633f);
+                        color: white;
+                        font-weight: bold;
+                        text-align: center;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        align-content: center;
+                        font-size: 26px;
+                        font-family: "Nerko One", cursive;
+                    }
+                    
+                    p {
+                        width: 100%;
+                        height: 30px;
+                        color: black;
+                        padding: 10px;
+                        margin-top: 6px;
+                        font-family: "Rajdhani", sans-serif;
+                    }
